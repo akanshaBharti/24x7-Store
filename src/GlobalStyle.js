@@ -157,6 +157,7 @@ input, textarea{
     cursor: pointer;
     }
 
+   
 @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
@@ -168,6 +169,7 @@ input, textarea{
        html {
       font-size: 50%;
     }
+      
 
 .grid{
   gap: 3.2rem;
