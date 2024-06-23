@@ -67,14 +67,13 @@ const Wrapper = styled.section`
   }
 
   .brand-section-slider {
-    margin-top: 3.2rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
     .icon {
-    /* font-size: rem; */
     width: 8rem;
     height: 8rem;
     padding: 2rem;
