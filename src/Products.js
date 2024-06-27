@@ -6,7 +6,7 @@ import ProductList from "./components/ProductList";
 import { useFilterContext } from "./context/filterContext";
 
 const Products = () => {
-  const filter_pl̥l̥lroducts = useFilterContext();
+  const {filter_products} = useFilterContext();
   
   return (
     <Wrapper>
@@ -19,7 +19,7 @@ const Products = () => {
             <Sort/>
           </div>
           <div className="main-product">
-            <ProductList />
+            <ProductList/>
           </div>
         </section>
       </div>

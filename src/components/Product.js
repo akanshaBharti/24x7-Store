@@ -25,4 +25,4 @@ const Product = (currElem) => {
   )
 }
 
-export default Product
+export default Product;
