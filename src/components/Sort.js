@@ -17,7 +17,21 @@ const Sort = () => {
         </button>
       </div>
       <div className='product-data'><p>{`${filter_products.length} Products Available`}</p></div>
-      <div className='sort-selection'>dropdown</div>
+      <div className='sort-selection'>
+        <form action='#'>
+          <label htmlFor='sort'/>
+            <select name='sort' id='sort' className='sort-selection--style'>
+             <option value="lowest">Price(lowest)</option>
+             <option value="#" disabled></option>
+             <option value="highest">Price(highest)</option>
+             <option value="#" disabled></option>
+             <option value="a-z">Price(a-z)</option>
+             <option value="#" disabled></option>
+             <option value="z-a">Price(z-a)</option>
+            </select>
+          
+        </form>
+      </div>
     </Wrapper>
   )
 }
