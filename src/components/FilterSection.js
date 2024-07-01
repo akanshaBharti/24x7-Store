@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useFilterContext } from "../context/filterContext";
 import { FaCheck } from "react-icons/fa";
 import FormatPrice from "../Helpers/FormatPrice";
+import {Button} from "../styles/Button";
 
 const FilterSection = () => {
   const {
@@ -126,6 +127,10 @@ const FilterSection = () => {
         value={price}
         onChange={updateFilterValue}
         />
+      </div>
+ 
+      <div className="filter-clear">
+        <Button className="btn" onClick={clearFilters}>Clear Filters</Button>
       </div>
 
     </Wrapper>
