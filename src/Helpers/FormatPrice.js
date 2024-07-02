@@ -9,4 +9,4 @@ const FormatPrice = ({price}) => {
     
 };
 
-export default FormatPrice
+export default FormatPrice;
