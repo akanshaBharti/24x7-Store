@@ -38,8 +38,8 @@ const CartItem = ({ id, name, image, color, price, amount }) => {
 
       <CartAmountToggle
         amount={amount}
-        setDecrease={setDecrease}
-        setIncrease={setIncrement}
+        setDecrease={() => setDecrease(id)}
+        setIncrease={() => setIncrement(id)}
       />
 
       <div className="cart-hide">
