@@ -10,7 +10,7 @@ const Trusted = () => {
   return (
     <Wrapper className="brand-section">
       <div className="container">
-        <h3>Trsusted by 1000+ Companies</h3>
+        <h3>Trusted by 1000+ Companies</h3>
         <div className="brand-section-slider">
           <div className="slide">
             <TbBrandAdobe className="icon" />

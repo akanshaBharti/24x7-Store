@@ -11,8 +11,8 @@ const HeroSection = (props) => {
       <div className="container">
         <div className="grid grid-two-column">
           <div className="hero-section-data">
-            <p className="intro-data">Welcome to</p>
-            <h1>{name}</h1>
+            <p className=" intro-data">Welcome to</p>
+            <h1 className="heading">{name}</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text

@@ -61,7 +61,7 @@ const Navbar = () => {
         width: 2.4rem;
         height: 2.4rem;
         position: absolute;
-        background-color: #000;
+        background-color: #5518AB;
         color: #fff;
         border-radius: 50%;
         display: grid;

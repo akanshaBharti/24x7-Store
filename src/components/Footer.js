@@ -48,7 +48,7 @@ const Footer = () => {
                 <FaInstagram className="icons" />
               </div>
               <div>
-                <a href="https://www.youtube.com/" target="_blank">
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
                   <FaYoutube className="icons" />
                 </a>
               </div>
@@ -162,4 +162,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Footer;
+export default Footer; 

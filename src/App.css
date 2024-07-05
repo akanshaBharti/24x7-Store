@@ -1,5 +1,19 @@
-.App {
+@font-face {
+  font-family: nunito;
+  src: url('styles/Nunito-VariableFont_wght.ttf');
+}
+
+/* .App {
   text-align: center;
+} */
+
+.nunito{
+  font-family: nunito;
+  
+}
+
+.heading{
+  font-family: nunito;
 }
 
 .App-logo {

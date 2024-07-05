@@ -11,12 +11,13 @@ import {GlobalStyle} from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import "./App.css"
 
 const App = () => {
   const theme = {
     colors: {
       bg: "#F6F8FA",
-      footer_bg: "#0a1435",
+      footer_bg: "#607196",
       btn: "rgb(98,84,243,0.5)",
       hr: "#ffffff",
       gradient: "linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%)",
