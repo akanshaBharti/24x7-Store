@@ -49,6 +49,8 @@ const CartProvider = ({ children }) => {
   // to add data in localStorage
   // set data
   useEffect(() => {
+    dispatch({type: "CART_TOTAL_ITEM"});
+    dispatch({type: "CART_TOTAL_PRICE"})
     localStorage.setItem("24x7Store", JSON.stringify(state.cart));
   }, [state.cart]);
 

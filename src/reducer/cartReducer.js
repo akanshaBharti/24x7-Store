@@ -11,25 +11,25 @@ const cartReducer = (state, action) => {
 
     if (existingProduct) {
       let updatedProduct = state.cart.map((curElem) => {
-          if(curElem.id ===  id+color){
-              let newAmount = curElem.amount + amount;
+        if (curElem.id === id + color) {
+          let newAmount = curElem.amount + amount;
 
-              if(newAmount >= curElem.max){
-                newAmount = curElem.max;
-              }
-          
-          return{
+          if (newAmount >= curElem.max) {
+            newAmount = curElem.max;
+          }
+
+          return {
             ...curElem,
             amount: newAmount,
-          }
-        }else{
+          };
+        } else {
           return curElem;
         }
       });
       return {
         ...state,
         cart: updatedProduct,
-      }
+      };
     } else {
       let cartProduct;
       cartProduct = {
@@ -107,6 +107,35 @@ const cartReducer = (state, action) => {
       ...state,
       cart: [],
     };
+  }
+
+  if (action.type === "CART_TOTAL_ITEM") {
+    let updatedItemVal = state.cart.reduce((initialValue, curElem) => {
+      let { amount } = curElem;
+      initialValue = initialValue + amount;
+      return initialValue;
+    }, 0);
+
+    return {
+      ...state,
+      total_item: updatedItemVal,
+    };
+  }
+
+  if(action.type === "CART_TOTAL_PRICE"){
+    let total_amount = state.cart.reduce((initialValue, curElem) => {
+      let {price, amount} = curElem;
+
+      initialValue = initialValue + price * amount;
+      return initialValue;
+    }, 0);
+
+    
+    return {
+      ...state,
+      total_amount: total_amount,
+      
+    }
   }
 
   return state;
