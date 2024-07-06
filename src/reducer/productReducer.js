@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProductReducer = (state, action) => {
   //   if(action.type === "SET_LOADING"){
   //       return{
@@ -63,12 +61,12 @@ const ProductReducer = (state, action) => {
       };
 
     default:
-      return {
-        ...state,
-      };
+      return state;
+      // return {
+      //   ...state,
+      // };
   }
 
-  return state;
 };
 
 export default ProductReducer;

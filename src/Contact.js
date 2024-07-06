@@ -47,6 +47,7 @@ const Contact = () => {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        // title="Google Maps showing Spark Mall location"
       ></iframe>
 
       <div className="container">
