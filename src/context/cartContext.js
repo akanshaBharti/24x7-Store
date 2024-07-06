@@ -5,11 +5,15 @@ const CartContext = createContext();
 
 const getLocalCartData = () => {
   let localCartData = localStorage.getItem("24x7Store");
-  if (!localCartData || localCartData.length === 0) {
-    return [];
-  } else {
-    return JSON.parse(localCartData);
-  }
+  // if (!localCartData || localCartData.length === 0) {
+  //   return [];
+  // } else {
+  //   return JSON.parse(localCartData);
+  // }
+  const parsedData = JSON.parse(localCartData);
+  if(!Array.isArray(parsedData)) return [];
+  return parsedData;
+  
 };
 
 
